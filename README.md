@@ -1,9 +1,31 @@
-# React + Vite
+# Atlys Assignment
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+URL - https://atlys-assignment-nu.vercel.app/
 
-Currently, two official plugins are available:
+Features -
+* Infinte loading (implemented a custom hook for that)
+* Fixed image container as placeholder (to prevent LCP) - part of optimisation
+* Pre-fetch - part of optimisation
+* Responsive
+* Lazy-loading
+* Other optimisations
+  * Virtualisation 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-# atlys-assignment
+## File Structure
+
+```
+src
+|
+|--hooks
+| |
+| |--useInfininteQuery.js
+|
+|
+|
+|-components
+| |
+| |--Gallery (to display the image grid)
+| |--LoadMore (common component to check if to load the next page in infinte loading)
+| |--Overlay (to view individual result)
+| |--Results (all the logic)
+```
